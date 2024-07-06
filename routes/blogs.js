@@ -34,7 +34,9 @@ router.get("/all/:id", async (req, res) => {
 
 // ___________________________ GET API DATA ___________________________
 
-
+router.get("/testing",(req,res)=>{
+    res.status(200).send("Server is up & running");
+})
 
 // ___________________________ POST API DATA ___________________________
 router.use(express.json());
